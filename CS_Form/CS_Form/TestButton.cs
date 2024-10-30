@@ -22,9 +22,14 @@ namespace CS_Form
             Click += OnClick;
         }
 
+        /// <summary>
+        /// ボタンをクリックした際の処理を記述する
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="s"></param>
         public void OnClick(object sender, EventArgs s)
         {
-            MessageBox.Show("(´・ω・｀)");
+            MessageBox.Show("Click");
         }
     }
 }
