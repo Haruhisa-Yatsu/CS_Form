@@ -12,6 +12,10 @@ namespace CS_Form
 {
     class TestButton : Button
     {
+        /// <summary>
+        /// ボタンをクリックした際にラベルを更新したいため、
+        /// Form1への参照を保管しておく
+        /// </summary>
         Form1 _form1;
 
         /// <summary>
@@ -21,6 +25,7 @@ namespace CS_Form
         public TestButton(Form1 form1, int id , int x, int y, int width, int height)
         {
 
+            // Form1のインスタンスを保管
             _form1 = form1;
 
             // ClickイベントにOnClick関数を登録

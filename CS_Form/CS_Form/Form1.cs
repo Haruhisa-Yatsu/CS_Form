@@ -12,18 +12,31 @@ namespace CS_Form
 {
     public partial class Form1 : Form
     {
+        /// <summary>
+        /// ラベルの文字列を更新するために
+        /// 参照を保管しておく
+        /// </summary>
         TestLabel _testLabel;
+
         public Form1()
         {
+            // コンポーネントの初期化
             InitializeComponent();
 
+            //　テストボタンを10個作成する
             for (int i = 0; i < 10; i++)
             {
+                // ボタンの表示処理
                 TestButton testButton = new TestButton(this, i,(i % 5) * 100, (i / 5) * 100, 100, 100);
+                
+                // ボタンの追加
                 Controls.Add(testButton);
             }
 
+            // ラベルの作成
             _testLabel = new TestLabel("らべるです。", 10,300,100,500);
+            
+            // ラベルの追加
             Controls.Add(_testLabel);
 
 
