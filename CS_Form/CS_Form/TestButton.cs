@@ -12,6 +12,8 @@ namespace CS_Form
 {
     class TestButton : Button
     {
+
+
         /// <summary>
         /// ボタンをクリックした際にラベルを更新したいため、
         /// Form1への参照を保管しておく
@@ -22,7 +24,7 @@ namespace CS_Form
         /// コンストラクタ
         /// クラスを生成したときに呼び出される
         /// </summary>
-        public TestButton(Form1 form1, int id , int x, int y, int width, int height)
+        public TestButton(Form1 form1, string str , int x, int y, int width, int height)
         {
 
             // Form1のインスタンスを保管
@@ -33,14 +35,13 @@ namespace CS_Form
             Click += OnClick;
 
             // ボタン内に文字を表示させる
-            Text = id.ToString();
+            Text = str;
 
             // ボタンの生成場所を指定
             Location = new Point(x, y);
 
             //　ボタンの大きさを指定
             Size = new Size(width, height);
-
         }
 
         /// <summary>

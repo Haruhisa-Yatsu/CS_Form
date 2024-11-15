@@ -23,11 +23,26 @@ namespace CS_Form
             // コンポーネントの初期化
             InitializeComponent();
 
+            string[] strs =
+            {
+                "あか",
+                "あお",
+                "きいろ",
+                "みどり",
+                "くろ",
+                "しろ",
+                "ちゃいろ",
+                "ピンク",
+                "むらさき",
+                "きみどり"
+            };
+
+
             //　テストボタンを10個作成する
             for (int i = 0; i < 10; i++)
             {
                 // ボタンの表示処理
-                TestButton testButton = new TestButton(this, i,(i % 5) * 100, (i / 5) * 100, 100, 100);
+                TestButton testButton = new TestButton(this, strs[i],(i % 5) * 100, (i / 5) * 100, 100, 100);
                 
                 // ボタンの追加
                 Controls.Add(testButton);
