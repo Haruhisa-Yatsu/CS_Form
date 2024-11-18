@@ -4,22 +4,17 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
-//using System.Reflection.Emit;
-//using static ～～～
-//↑追加されてたら消してください
-
 using System.Windows.Forms;
 
 namespace CS_Form
 {
-    class TestLabel : Label
+    class TestTextBox : TextBox
     {
         /// <summary>
         /// コンストラクタ
         /// クラスを生成したときに呼び出される
         /// </summary>
-        public TestLabel(string str, int x, int y, 
+        public TestTextBox(string str, int x, int y,
             int width, int height)
         {
             // ラベル内に文字を表示させる
@@ -30,15 +25,6 @@ namespace CS_Form
 
             //　ボタンの大きさを指定
             Size = new Size(width, height);
-        }
-
-        /// <summary>
-        /// ラベルの文字更新関数
-        /// </summary>
-        /// <param name="str"></param>
-        public void TextUpdate(string str)
-        {
-            Text = str;
         }
 
     }

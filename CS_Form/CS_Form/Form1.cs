@@ -18,6 +18,8 @@ namespace CS_Form
         /// </summary>
         TestLabel _testLabel;
 
+        TestTextBox _textBox;
+
         public Form1()
         {
             // コンポーネントの初期化
@@ -49,11 +51,17 @@ namespace CS_Form
             }
 
             // ラベルの作成
-            _testLabel = new TestLabel("らべるです。", 10,300,100,500);
+            _testLabel = new TestLabel("らべるです。", 10,250,500,50);
             
             // ラベルの追加
             Controls.Add(_testLabel);
 
+
+            // テキストボックスの作成
+            _textBox = new TestTextBox(
+                "てきすとぼっくすです",10,300,500,100);
+
+            Controls.Add(_textBox);
 
             //Label label = new Label();
             //label.Location = new Point(30,400);
