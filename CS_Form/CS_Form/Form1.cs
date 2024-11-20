@@ -60,7 +60,7 @@ namespace CS_Form
             // テキストボックスの作成
             _textBox = new TestTextBox(
                 "てきすとぼっくすです",10,300,500,100);
-
+            
             Controls.Add(_textBox);
 
             //Label label = new Label();
@@ -79,10 +79,15 @@ namespace CS_Form
         }
 
 
+        /// <summary>
+        /// 指定されたテキストでTextboxを更新し
+        /// もともとあったTextboxのテキストを返す関数
+        /// </summary>
+        /// <param name="str"></param>
+        /// <returns></returns>
         public string ButtonLabelReplacement(string str)
         {
             string s = _textBox.TextReplacement(str);
-
 
             return s;
         }

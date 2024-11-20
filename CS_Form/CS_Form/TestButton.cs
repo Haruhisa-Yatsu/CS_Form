@@ -55,7 +55,7 @@ namespace CS_Form
 
             Text = t;
 
-            _form1.LabelTextUpdate(Text);
+            //_form1.LabelTextUpdate(Text);
         }
     }
 }

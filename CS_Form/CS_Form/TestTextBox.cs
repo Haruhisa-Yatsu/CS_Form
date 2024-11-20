@@ -27,6 +27,12 @@ namespace CS_Form
             Size = new Size(width, height);
         }
 
+        /// <summary>
+        /// 指定されたテキストで更新し
+        /// もともとのテキストを返す関数
+        /// </summary>
+        /// <param name="str"></param>
+        /// <returns></returns>
         public string TextReplacement(string str)
         {
             string temp = Text;
