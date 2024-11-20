@@ -51,6 +51,9 @@ namespace CS_Form
         /// <param name="s"></param>
         public void OnClick(object sender, EventArgs s)
         {
+            string t = _form1.ButtonLabelReplacement(Text);
+
+            Text = t;
 
             _form1.LabelTextUpdate(Text);
         }

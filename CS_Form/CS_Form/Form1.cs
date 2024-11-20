@@ -78,5 +78,16 @@ namespace CS_Form
             _testLabel.TextUpdate(str);
         }
 
+
+        public string ButtonLabelReplacement(string str)
+        {
+            string s = _textBox.TextReplacement(str);
+
+
+            return s;
+        }
+
+
+
     }
 }
